@@ -17,12 +17,6 @@
   body{
     margin:0;
   }
-    #active {
-      color:skyblue;
-    }
-    .list {
-      color:green;
-    }
     a {
       color:black;
       text-decoration: none;
@@ -40,22 +34,37 @@
       margin:0;
       padding:20px;
     }
+    #grid{
+      display:grid;
+      grid-template-columns: 150px 1fr;
+    }
+    #grid ol{
+      padding-left:33px;
+    }
+    #article{
+      padding-left:90px;
+    }
   </style>
 </head>
 <body>
   <h1>YUZION</h1>
-  <ol>
-    <li>INTRODUCTION</li>
-    <li>DISCOGRAPHIES</li>
-    <li><a href="yuzionlinks.html" class="list">MY PLAYLISTS</a></li>
-    <li><a href="1.html" class="list" id="active">YUZION PICS</a></li>
-    </ol>
-    <p>YUZION is a Korean rapper
-      born on May 18, 2002.
-      <strong>she has a <u>unique voice</u></strong> so she has many
-      male fans.<br><br>
-      <img src="https://lastfm.freetls.fastly.net/i/u/770x0/b6723b9ebf590bf657ae70279ee2416a.jpg" width="30%">
-    </o><p style="margin-top:45px;">her discographies:</p>
+  <div id="grid">
+    <ol>
+      <li>INTRODUCTION</li>
+      <li>DISCOGRAPHIES</li>
+      <li><a href="yuzionlinks.html">MY PLAYLISTS</a></li>
+      <li><a href="1.html">YUZION PICS</a></li>
+      </ol>
+      <div id="article">
+        <p>YUZION is a Korean rapper
+          born on May 18, 2002.
+          <strong>she has a <u>unique voice</u></strong> so she has many
+          male fans.<br><br>
+          <img src="https://lastfm.freetls.fastly.net/i/u/770x0/b6723b9ebf590bf657ae70279ee2416a.jpg" width="30%">
+        </p><p style="margin-top:45px;">her discographies:
+        </p>
+      </div>
+  </div>
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
