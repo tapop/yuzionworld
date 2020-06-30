@@ -27,6 +27,7 @@ body{
   }
   #article{
     padding-left:90px;
+    padding-top:20px;
   }
   @media(max-width:800px){
     #grid{
